@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-input-search-button {
+  background-color: black;
+  color: white;
+}
+
+.ant-upload-wrapper .ant-upload-list {
+  line-height: 1.5714285714285714;
+  display: flex;
+  justify-content: center;
+}
+
+.ant-input-affix-wrapper > input.ant-input {
+  padding: 2px;
+  font-size: large;
+}
+
+.ant-input-group .ant-input-affix-wrapper:not(:last-child) {
+  border-start-start-radius: 6px;
+  border-end-start-radius: 6px;
+  height: 40px;
+}
+
+.ant-modal .ant-modal-footer .ant-btn + .ant-btn:not(.ant-dropdown-trigger) {
+  margin-bottom: 0;
+  margin-inline-start: 8px;
+  background: black;
+}
