@@ -1,7 +1,7 @@
 {
-  "name": "drugsales",
+  "name": "payday",
   "version": "1.0.0",
-  "description": "drug store management server",
+  "description": "recruit skilled personnels",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
