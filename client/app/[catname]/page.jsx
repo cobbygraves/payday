@@ -52,10 +52,13 @@ export default function page({ params }) {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(async function (position) {
         try {
-          const resp = await axios.post(`${hostAPI}/user`, {
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude
-          })
+          const resp = await axios.post(
+            `https://paydaygh-7360d25bb576.herokuapp.com/user`,
+            {
+              latitude: position.coords.latitude,
+              longitude: position.coords.longitude
+            }
+          )
           const searchedUsers = resp.data.filter(
             (user) => user.sector === catname
           )
